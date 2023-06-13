@@ -48,9 +48,9 @@ def evaluate_input(input_text):
         elif input_text == "stop":
             tello.move_forward(0)
         elif input_text == "rotate clockwise":
-            tello.rotate_clockwise(360)
+            tello.cw(360)
         elif input_text == "rotate counter":
-            tello.rotate_clockwise(-360)
+            tello.cw(-360)
         else:
             print("Please give command again.")
     except Exception:
